@@ -2,5 +2,15 @@
 //The function should take as parameters the array, its size, and the desired number.
 //The function should return 0 if the size parameter, n, is less than 1.
 
-Signature: int num_count(int array[], int n, int number)
+#include<iostream>
+using namespace std;
 
+int num_count(int array[], int n, int number){
+    int count=0;
+    for(int i=0; i<n;i++){
+        if(array[i]==number){
+            count=count+1;
+        }
+    }
+    return count;
+}
